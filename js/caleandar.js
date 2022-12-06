@@ -214,6 +214,7 @@ function createCalendar(calendar, element, adjuster){
           if(typeof calendar.Model[n].Link == 'function' || calendar.Options.EventClick){
             var a = document.createElement('a');
             a.setAttribute('href', '#');
+            a.setAttribute('target', '_blank');
             a.innerHTML += calendar.Model[n].Title;
             if(calendar.Options.EventClick){
               var z = calendar.Model[n].Link;
@@ -239,7 +240,7 @@ function createCalendar(calendar, element, adjuster){
             }
             title.appendChild(a);
           }else{
-            title.innerHTML += '<a href="' + calendar.Model[n].Link + '">' + calendar.Model[n].Title + '</a>';
+            title.innerHTML += '<a href="' + calendar.Model[n].Link + '" target="_blank" >' + calendar.Model[n].Title + '</a>';
           }
           number.appendChild(title);
         }
