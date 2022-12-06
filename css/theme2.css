@@ -3,7 +3,7 @@
 }
 .cld-main a{
   /* color: #0080FF; */
-  color: #FFD700;
+  color: #252526;
 }
 .cld-main svg{
   /* fill: #0080FF; */
@@ -35,7 +35,7 @@
   }
   .cld-nav:hover svg{
       /* fill: #005EFF; */
-      fill: #FFD700;
+      fill: #252526;
   }
   .cld-rwd{
     float: left;
